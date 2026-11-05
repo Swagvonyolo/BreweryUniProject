@@ -1,0 +1,66 @@
+[
+  {
+    "id": "P001",
+    "name": "Pythonic IPA",
+    "abv": 6,
+    "brew_time": 14,
+    "unit": "days",
+    "packaging": "Casks"
+  },
+  {
+    "id": "P002",
+    "name": "Pythonic IPA",
+    "abv": 6,
+    "brew_time": 14,
+    "unit": "days",
+    "packaging": "Bottles"
+  },
+  {
+    "id": "P003",
+    "name": "The Porter Parameter",
+    "abv": 7.5,
+    "brew_time": 21,
+    "unit": "days",
+    "packaging": "Casks"
+  },
+  {
+    "id": "P004",
+    "name": "The Porter Parameter",
+    "abv": 7.5,
+    "brew_time": 21,
+    "unit": "days",
+    "packaging": "Bottles"
+  },
+  {
+    "id": "P005",
+    "name": "Boolean Blonde",
+    "abv": 4.2,
+    "brew_time": 10,
+    "unit": "days",
+    "packaging": "Casks"
+  },
+  {
+    "id": "P006",
+    "name": "Boolean Blonde",
+    "abv": 4.2,
+    "brew_time": 10,
+    "unit": "days",
+    "packaging": "Bottles"
+  },
+  {
+    "id": "P007",
+    "name": "Lambda Lager",
+    "abv": 4.8,
+    "brew_time": 14,
+    "unit": "days",
+    "packaging": "Casks"
+  },
+  {
+    "id": "P008",
+    "name": "Lambda Lager",
+    "abv": 4.8,
+    "brew_time": 14,
+    "unit": "days",
+    "packaging": "Bottles"
+  }
+]

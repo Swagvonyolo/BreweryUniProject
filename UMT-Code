@@ -1,0 +1,79 @@
+@startuml
+title Brewery Production Planning - Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+hide empty members
+
+class Product <<products.json>> {
+    product_id
+    name
+    ABV%
+    brew_time
+    packaging
+}
+
+class Material <<materials.json>> {
+    material_id
+    name
+    unit
+    in_stock
+}
+
+class Recipe <<recipes.json>> {
+    product_id
+
+}
+
+class WorkOrder <<work_orders.json>> {
+    order_id
+    product_id
+    quantity
+    priority
+    deadline
+    status
+    created
+    --
+    to_dict()
+    calculate_requirements(recipes)
+    change_status(user)
+}
+
+class JsonStorage <<helpers.py>> {
+    {static} load_json(filename)
+    {static} save_json(filename, data)
+    {static} load_work_orders(filename)
+    {static} save_work_orders(filename, orders)
+}
+
+' --- Relationships ---
+WorkOrder "0..*" --> "1" Product : is an order for
+
+Product "1" -- "1..*" Recipe
+Recipe "0..*" -- "1" Material
+
+WorkOrder ..> Recipe : reads to calculate\nmaterial requirements
+JsonStorage ..> WorkOrder : creates / converts\nto and from dicts
+
+' --- Notes ---
+note right of WorkOrder
+    status: "open" | "active" | "quality assurance" | "completed"
+    priority: "high" | "medium" | "low"
+    deadline / created: "YYYY-MM-DD"
+    JSON key "id" is stored as order_id
+    product_id links to Product
+end note
+
+note bottom of Recipe
+    Stored as nested dict:
+    recipes[product_id][material_id]
+    = amount needed for ONE unit
+end note
+
+note right of JsonStorage
+    helpers.py will contain functions global to all units
+    like user log in functions, permission checks, and 
+    loading / unloading of JSON data
+end note  
+
+@enduml

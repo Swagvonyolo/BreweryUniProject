@@ -1,0 +1,92 @@
+[
+  {
+  "id": "WO001",
+  "product_id": "P001",
+  "quantity": 500,
+  "creation_date": "2024-01-01",
+  "delivery_date": "2024-01-20",
+  "status": "open",
+  "priority": "medium"
+},
+{
+  "id": "WO002",
+  "product_id": "P002",
+  "quantity": 100,
+  "creation_date": "2024-01-04",
+  "delivery_date": "2024-01-22",
+  "status": "open",
+  "priority": "low"
+},
+{
+  "id": "WO003",
+  "product_id": "P003",
+  "quantity": 150,
+  "creation_date": "2024-01-04",
+  "delivery_date": "2024-01-22",
+  "status": "open",
+  "priority": "high"
+},
+{
+  "id": "WO004",
+  "product_id": "P004",
+  "quantity": 175,
+  "creation_date": "2024-01-04",
+  "delivery_date": "2024-01-22",
+  "status": "open",
+  "priority": "medium"
+},
+{
+  "id": "WO005",
+  "product_id": "P005",
+  "quantity": 200,
+  "creation_date": "2024-01-06",
+  "delivery_date": "2024-01-22",
+  "status": "open",
+  "priority": "high"
+},
+{
+  "id": "WO006",
+  "product_id": "P004",
+  "quantity": 50,
+  "creation_date": "2024-01-07",
+  "delivery_date": "2024-02-07",
+  "status": "open",
+  "priority": "low"
+},
+{
+  "id": "WO007",
+  "product_id": "P004",
+  "quantity": 100,
+  "creation_date": "2024-01-12",
+  "delivery_date": "2024-02-07",
+  "status": "open",
+  "priority": "medium"
+},
+{
+  "id": "WO008",
+  "product_id": "P005",
+  "quantity": 200,
+  "creation_date": "2024-01-12",
+  "delivery_date": "2024-02-07",
+  "status": "open",
+  "priority": "high"
+},
+{
+  "id": "WO009",
+  "product_id": "P002",
+  "quantity": 75,
+  "creation_date": "2024-01-14",
+  "delivery_date": "2024-02-14",
+  "status": "open",
+  "priority": "low"
+},
+{
+  "id": "WO010",
+  "product_id": "P003",
+  "quantity": 300,
+  "creation_date": "2024-01-15",
+  "delivery_date": "2024-02-01",
+  "status": "open",
+  "priority": "high"
+  }
+]
